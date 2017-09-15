@@ -1,0 +1,65 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  company_name: MyString
+  address: MyString
+  thumbnail_img: MyString
+  date: MyString
+  position: MyString
+  job_descripton: MyString
+  avilities: MyString
+  employees: MyString
+  work_place: MyString
+  work_start: MyString
+  work_end: MyString
+  holiday: MyString
+  salary: MyString
+  treatment: MyString
+  interview_content: MyString
+  employment_type_pro: 1
+  employment_type_student: 1
+  employment_type_part: 1
+  work_time_morning: MyString
+  work_time_afternoon: MyString
+  work_time_break: MyString
+  work_time_study: MyString
+  company_color1: MyString
+  company_color1_value: 1
+  company_color2: MyString
+  company_color2_value: 1
+  company_color3: MyString
+  company_color3_value: 1
+  overtime: MyString
+  career_steppe: MyString
+
+two:
+  company_name: MyString
+  address: MyString
+  thumbnail_img: MyString
+  date: MyString
+  position: MyString
+  job_descripton: MyString
+  avilities: MyString
+  employees: MyString
+  work_place: MyString
+  work_start: MyString
+  work_end: MyString
+  holiday: MyString
+  salary: MyString
+  treatment: MyString
+  interview_content: MyString
+  employment_type_pro: 1
+  employment_type_student: 1
+  employment_type_part: 1
+  work_time_morning: MyString
+  work_time_afternoon: MyString
+  work_time_break: MyString
+  work_time_study: MyString
+  company_color1: MyString
+  company_color1_value: 1
+  company_color2: MyString
+  company_color2_value: 1
+  company_color3: MyString
+  company_color3_value: 1
+  overtime: MyString
+  career_steppe: MyString

@@ -1,0 +1,96 @@
+%p#notice= notice
+
+%p
+  %b Company name:
+  = @article.company_name
+%p
+  %b Address:
+  = @article.address
+%p
+  %b Thumbnail img:
+  = @article.thumbnail_img
+%p
+  %b Date:
+  = @article.date
+%p
+  %b Position:
+  = @article.position
+%p
+  %b Job descripton:
+  = @article.job_descripton
+%p
+  %b Avilities:
+  = @article.avilities
+%p
+  %b Employees:
+  = @article.employees
+%p
+  %b Work place:
+  = @article.work_place
+%p
+  %b Work start:
+  = @article.work_start
+%p
+  %b Work end:
+  = @article.work_end
+%p
+  %b Holiday:
+  = @article.holiday
+%p
+  %b Salary:
+  = @article.salary
+%p
+  %b Treatment:
+  = @article.treatment
+%p
+  %b Interview content:
+  = @article.interview_content
+%p
+  %b Employment type pro:
+  = @article.employment_type_pro
+%p
+  %b Employment type student:
+  = @article.employment_type_student
+%p
+  %b Employment type part:
+  = @article.employment_type_part
+%p
+  %b Work time morning:
+  = @article.work_time_morning
+%p
+  %b Work time afternoon:
+  = @article.work_time_afternoon
+%p
+  %b Work time break:
+  = @article.work_time_break
+%p
+  %b Work time study:
+  = @article.work_time_study
+%p
+  %b Company color1:
+  = @article.company_color1
+%p
+  %b Company color1 value:
+  = @article.company_color1_value
+%p
+  %b Company color2:
+  = @article.company_color2
+%p
+  %b Company color2 value:
+  = @article.company_color2_value
+%p
+  %b Company color3:
+  = @article.company_color3
+%p
+  %b Company color3 value:
+  = @article.company_color3_value
+%p
+  %b Overtime:
+  = @article.overtime
+%p
+  %b Career steppe:
+  = @article.career_steppe
+
+= link_to 'Edit', edit_article_path(@article)
+\|
+= link_to 'Back', articles_path

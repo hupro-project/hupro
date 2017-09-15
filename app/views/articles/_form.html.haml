@@ -1,0 +1,100 @@
+= form_for @article do |f|
+  - if @article.errors.any?
+    #error_explanation
+      %h2= "#{pluralize(@article.errors.count, "error")} prohibited this article from being saved:"
+      %ul
+        - @article.errors.full_messages.each do |message|
+          %li= message
+
+  .field
+    = f.label :company_name
+    = f.text_field :company_name
+  .field
+    = f.label :address
+    = f.text_field :address
+  .field
+    = f.label :thumbnail_img
+    = f.text_field :thumbnail_img
+  .field
+    = f.label :date
+    = f.text_field :date
+  .field
+    = f.label :position
+    = f.text_field :position
+  .field
+    = f.label :job_descripton
+    = f.text_field :job_descripton
+  .field
+    = f.label :avilities
+    = f.text_field :avilities
+  .field
+    = f.label :employees
+    = f.text_field :employees
+  .field
+    = f.label :work_place
+    = f.text_field :work_place
+  .field
+    = f.label :work_start
+    = f.text_field :work_start
+  .field
+    = f.label :work_end
+    = f.text_field :work_end
+  .field
+    = f.label :holiday
+    = f.text_field :holiday
+  .field
+    = f.label :salary
+    = f.text_field :salary
+  .field
+    = f.label :treatment
+    = f.text_field :treatment
+  .field
+    = f.label :interview_content
+    = f.text_field :interview_content
+  .field
+    = f.label :employment_type_pro
+    = f.number_field :employment_type_pro
+  .field
+    = f.label :employment_type_student
+    = f.number_field :employment_type_student
+  .field
+    = f.label :employment_type_part
+    = f.number_field :employment_type_part
+  .field
+    = f.label :work_time_morning
+    = f.text_field :work_time_morning
+  .field
+    = f.label :work_time_afternoon
+    = f.text_field :work_time_afternoon
+  .field
+    = f.label :work_time_break
+    = f.text_field :work_time_break
+  .field
+    = f.label :work_time_study
+    = f.text_field :work_time_study
+  .field
+    = f.label :company_color1
+    = f.text_field :company_color1
+  .field
+    = f.label :company_color1_value
+    = f.number_field :company_color1_value
+  .field
+    = f.label :company_color2
+    = f.text_field :company_color2
+  .field
+    = f.label :company_color2_value
+    = f.number_field :company_color2_value
+  .field
+    = f.label :company_color3
+    = f.text_field :company_color3
+  .field
+    = f.label :company_color3_value
+    = f.number_field :company_color3_value
+  .field
+    = f.label :overtime
+    = f.text_field :overtime
+  .field
+    = f.label :career_steppe
+    = f.text_field :career_steppe
+  .actions
+    = f.submit 'Save'

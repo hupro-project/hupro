@@ -1,0 +1,79 @@
+%h1 Listing articles
+
+%table
+  %thead
+    %tr
+      %th Company name
+      %th Address
+      %th Thumbnail img
+      %th Date
+      %th Position
+      %th Job descripton
+      %th Avilities
+      %th Employees
+      %th Work place
+      %th Work start
+      %th Work end
+      %th Holiday
+      %th Salary
+      %th Treatment
+      %th Interview content
+      %th Employment type pro
+      %th Employment type student
+      %th Employment type part
+      %th Work time morning
+      %th Work time afternoon
+      %th Work time break
+      %th Work time study
+      %th Company color1
+      %th Company color1 value
+      %th Company color2
+      %th Company color2 value
+      %th Company color3
+      %th Company color3 value
+      %th Overtime
+      %th Career steppe
+      %th
+      %th
+      %th
+
+  %tbody
+    - @articles.each do |article|
+      %tr
+        %td= article.company_name
+        %td= article.address
+        %td= article.thumbnail_img
+        %td= article.date
+        %td= article.position
+        %td= article.job_descripton
+        %td= article.avilities
+        %td= article.employees
+        %td= article.work_place
+        %td= article.work_start
+        %td= article.work_end
+        %td= article.holiday
+        %td= article.salary
+        %td= article.treatment
+        %td= article.interview_content
+        %td= article.employment_type_pro
+        %td= article.employment_type_student
+        %td= article.employment_type_part
+        %td= article.work_time_morning
+        %td= article.work_time_afternoon
+        %td= article.work_time_break
+        %td= article.work_time_study
+        %td= article.company_color1
+        %td= article.company_color1_value
+        %td= article.company_color2
+        %td= article.company_color2_value
+        %td= article.company_color3
+        %td= article.company_color3_value
+        %td= article.overtime
+        %td= article.career_steppe
+        %td= link_to 'Show', article
+        %td= link_to 'Edit', edit_article_path(article)
+        %td= link_to 'Destroy', article, method: :delete, data: { confirm: 'Are you sure?' }
+
+%br
+
+= link_to 'New Article', new_article_path

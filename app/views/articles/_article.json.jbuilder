@@ -1,0 +1,2 @@
+json.extract! article, :id, :company_name, :address, :thumbnail_img, :date, :position, :job_descripton, :avilities, :employees, :work_place, :work_start, :work_end, :holiday, :salary, :treatment, :interview_content, :employment_type_pro, :employment_type_student, :employment_type_part, :work_time_morning, :work_time_afternoon, :work_time_break, :work_time_study, :company_color1, :company_color1_value, :company_color2, :company_color2_value, :company_color3, :company_color3_value, :overtime, :career_steppe, :created_at, :updated_at
+json.url article_url(article, format: :json)
