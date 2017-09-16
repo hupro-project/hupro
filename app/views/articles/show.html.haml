@@ -7,11 +7,23 @@
   %b Address:
   = @article.address
 %p
-  %b Thumbnail img:
-  = @article.thumbnail_img
+  %b thumbnail_img:
+  = image_tag @article.thumbnail_img.url(:medium)
 %p
   %b Date:
   = @article.date
+%p
+  %b header_img:
+  = image_tag @article.header_img.url(:medium)
+%p
+  %b thumbnail_img:
+  = image_tag @article.footer_img1.url(:medium)
+%p
+  %b thumbnail_img:
+  = image_tag @article.footer_img2.url(:medium)
+%p
+  %b thumbnail_img:
+  = image_tag @article.footer_img3.url(:medium)
 %p
   %b Position:
   = @article.position
@@ -42,6 +54,9 @@
 %p
   %b Treatment:
   = @article.treatment
+%p
+  %b interview_img:
+  = image_tag @article.interview_img.url(:medium)
 %p
   %b Interview content:
   = @article.interview_content
