@@ -3,7 +3,6 @@ class CreateArticles < ActiveRecord::Migration[5.1]
     create_table :articles do |t|
       t.string :company_name
       t.string :address
-      t.string :thumbnail_img
       t.string :date
       t.string :position
       t.string :job_descripton

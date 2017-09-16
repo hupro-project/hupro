@@ -5,8 +5,11 @@
     %tr
       %th Company name
       %th Address
-      %th Thumbnail img
+      %th thumbnail img
       %th Date
+      %th Footer img1
+      %th Footer img2
+      %th Footer img3
       %th Position
       %th Job descripton
       %th Avilities
@@ -17,6 +20,7 @@
       %th Holiday
       %th Salary
       %th Treatment
+      %th Interview img
       %th Interview content
       %th Employment type pro
       %th Employment type student
@@ -42,8 +46,11 @@
       %tr
         %td= article.company_name
         %td= article.address
-        %td= article.thumbnail_img
+        %td= image_tag article.header_img.url(:medium)
         %td= article.date
+        %td= image_tag article.footer_img1.url(:medium)
+        %td= image_tag article.footer_img2.url(:medium)
+        %td= image_tag article.footer_img3.url(:medium)
         %td= article.position
         %td= article.job_descripton
         %td= article.avilities
@@ -54,6 +61,7 @@
         %td= article.holiday
         %td= article.salary
         %td= article.treatment
+        %td= image_tag article.interview_img.url(:medium)
         %td= article.interview_content
         %td= article.employment_type_pro
         %td= article.employment_type_student

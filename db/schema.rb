@@ -10,12 +10,11 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170914175227) do
+ActiveRecord::Schema.define(version: 20170915165313) do
 
   create_table "articles", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.string "company_name"
     t.string "address"
-    t.string "thumbnail_img"
     t.string "date"
     t.string "position"
     t.string "job_descripton"
@@ -61,10 +60,14 @@ ActiveRecord::Schema.define(version: 20170914175227) do
     t.string "footer_img3_content_type"
     t.integer "footer_img3_file_size"
     t.datetime "footer_img3_updated_at"
-    t.string "interview_file_name"
-    t.string "interview_content_type"
-    t.integer "interview_file_size"
-    t.datetime "interview_updated_at"
+    t.string "interview_img_file_name"
+    t.string "interview_img_content_type"
+    t.integer "interview_img_file_size"
+    t.datetime "interview_img_updated_at"
+    t.string "thumbnail_img_file_name"
+    t.string "thumbnail_img_content_type"
+    t.integer "thumbnail_img_file_size"
+    t.datetime "thumbnail_img_updated_at"
   end
 
 end
