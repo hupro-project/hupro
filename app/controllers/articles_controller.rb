@@ -55,6 +55,13 @@ class ArticlesController < ApplicationController
   # DELETE /articles/1.json
   def destroy
     @article.destroy
+    @article.thumbnail_img.destroy
+    @article.header_img.destroy
+    @article.footer_img1.destroy
+    @article.footer_img2.destroy
+    @article.footer_img3.destroy
+    @article.interview_img.destroy
+
     respond_to do |format|
       format.html { redirect_to articles_url, notice: 'Article was successfully destroyed.' }
       format.json { head :no_content }
@@ -69,7 +76,7 @@ class ArticlesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def article_params
-      params.require(:article).permit(:company_name, :address, :thumbnail_img, :date, :position, :job_descripton, :avilities, :employees, :work_place, :work_start, :work_end, :holiday, :salary, :treatment, :interview_content, :employment_type_pro, :employment_type_student, :employment_type_part, :work_time_morning, :work_time_afternoon, :work_time_break, :work_time_study, :company_color1, :company_color1_value, :company_color2, :company_color2_value, :company_color3, :company_color3_value, :overtime, :career_steppe, :header_img, :footer_img1, :footer_img2, :footer_img3, :interview_img)
+      params.require(:article).permit(:company_name, :address, :thumbnail_img, :date, :position, :job_descripton, :avilities, :employees, :work_place, :work_start, :work_end, :holiday, :salary, :treatment, :interview_content, :employment_type_pro, :employment_type_student, :employment_type_part, :work_time_morning, :work_time_afternoon, :work_time_break, :work_time_study, :company_color1, :company_color1_value, :company_color2, :company_color2_value, :company_color3, :company_color3_value, :overtime, :career_steppe1, :career_steppe2, :career_steppe3, :career_steppe4, :career_steppe5, :header_img, :footer_img1, :footer_img2, :footer_img3, :interview_img)
 
     end
 end

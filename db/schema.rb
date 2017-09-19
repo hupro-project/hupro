@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170916094114) do
+ActiveRecord::Schema.define(version: 20170919165812) do
 
   create_table "articles", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.string "company_name"
@@ -41,7 +41,11 @@ ActiveRecord::Schema.define(version: 20170916094114) do
     t.string "company_color3"
     t.integer "company_color3_value"
     t.string "overtime"
-    t.string "career_steppe"
+    t.integer "career_steppe1"
+    t.integer "career_steppe2"
+    t.integer "career_steppe3"
+    t.integer "career_steppe4"
+    t.integer "career_steppe5"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.string "header_img_file_name"
@@ -94,6 +98,8 @@ ActiveRecord::Schema.define(version: 20170916094114) do
     t.string "last_sign_in_ip"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "provider"
+    t.string "uid"
     t.index ["email"], name: "index_users_on_email", unique: true
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end

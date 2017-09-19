@@ -29,7 +29,11 @@ class CreateArticles < ActiveRecord::Migration[5.1]
       t.string :company_color3
       t.integer :company_color3_value
       t.string :overtime
-      t.string :career_steppe
+      t.integer :career_steppe1
+      t.integer :career_steppe2
+      t.integer :career_steppe3
+      t.integer :career_steppe4
+      t.integer :career_steppe5
 
       t.timestamps
     end
