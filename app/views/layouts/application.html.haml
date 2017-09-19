@@ -1,0 +1,27 @@
+!!!
+%html
+  %head
+    %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
+    %title HuproProject
+    = csrf_meta_tags
+    = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload'
+    = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
+  %body
+    %nav
+      / user_signed_in? はユーザがログインしているか調べるdeviseのHelperメソッド
+      - if user_signed_in?
+        / current_user は現在ログインしているUserオブジェクトを返すdeviseのHelperメソッド
+        /
+          *_path はUserモデルを作成したときに、
+          deviseにより自動で作成されてますので、rake routesで確認できます
+        Logged in as
+        = succeed "." do
+          %strong= current_user.email
+        = link_to 'プロフィール変更', edit_user_registration_path
+        |
+        \#{link_to "ログアウト", sign_out_path}
+      - else
+        = link_to "サインイン", new_user_registration_path
+        |
+        \#{link_to "ログイン", new_user_session_path}
+    = yield
